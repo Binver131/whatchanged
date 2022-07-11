@@ -176,7 +176,6 @@ func Transform(g *client.GitClient, splices []*ExtractSplice) ([]*TemplateContex
 
 			msg := conventionalcommitparser.Parse(commit.Message)
 			header := msg.ParseHeader()
-
 			field := msg
 
 			c.Field = Message{
